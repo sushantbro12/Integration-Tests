@@ -1,0 +1,102 @@
+/* General Styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.center {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* AddTodo Component */
+.add-todo__container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-todo__input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-todo__button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-todo__button:hover {
+  background-color: #218838;
+}
+
+/* Todos Component */
+.all-todos__container {
+  margin-top: 20px;
+}
+
+.all-todos__container h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Todo Component */
+.todo__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.todo__checkbox {
+  cursor: pointer;
+}
+
+.todo__checkbox .icon {
+  font-size: 24px;
+  color: #28a745;
+}
+
+.todo__checkbox .icon.checked {
+  color: #ffc107;
+}
+
+.todo__text {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.todo__text.complete {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo__delete {
+  cursor: pointer;
+}
+
+.todo__delete .icon {
+  font-size: 20px;
+  color: #dc3545;
+}
+
+.todo__delete .icon:hover {
+  color: #bd2130;
+}
